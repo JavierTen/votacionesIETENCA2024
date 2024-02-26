@@ -244,8 +244,8 @@
 									</div>
 								</div>
 								<div class="politics-btn">
-									<button class="send" id="sendButton" style="color: white;">Enviar <span><i
-												class="flaticon flaticon-right-arrow"></i></span></button>
+									<button  style="color: white;">Enviar <span><i
+												class="flaticon flaticon-right-arrow"></i></span></button >
 								</div>
 							</div>
 						</div>
@@ -477,18 +477,18 @@
 	<script src="assets/js/theme.js"></script>
 
 	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-			const sendButton = document.getElementById('sendButton');
-			sendButton.addEventListener('click', function (e) {
-				e.preventDefault();
-				const aboutSection = document.querySelector('.about-page-area');
-				aboutSection.classList.add('hidden');
-				const gallerySection = document.querySelector('.gallery-page-area'); 
-				gallerySection.classList.remove('hidden');
-			});
+		document.addEventListener("DOMContentLoaded", function() {
+		  const enviarBtn = document.querySelector('.enviar-btn');
+		  
+		  enviarBtn.addEventListener('click', function(e) {
+			e.preventDefault();
+			
+			const gallerySection = document.querySelector('.gallery-page-area');
+			gallerySection.classList.remove('hidden');
+		  });
 		});
-	</script>
-
+		</script>
+		
 
 
 </body>

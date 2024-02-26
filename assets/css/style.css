@@ -9655,3 +9655,19 @@ span.flaticon-multiply i {
 	box-sizing: border-box;
 	transition: all 200ms linear !important;
 }
+
+.hidden {
+    display: none;
+  }
+
+.send{
+    display: inline-block;
+    color: #ffffff;
+    width: 40%;
+    height: 50px;
+    border-radius: 3%;
+    background-color: #19a349;
+    line-height: 45px;
+    margin-left: 8px;
+    transition: .5s;
+}
