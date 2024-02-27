@@ -6740,8 +6740,9 @@ ul.footer-widget-list li a:hover {
 	margin-top: -263px;
 }
 .gallery-page-area.gallery-page-two {
-	margin-top: 0;
-	padding: 85px 0 70px;
+	margin-top: -103px;
+	/* margin-bottom: 33px; */
+	/* padding: 0px 0px 61px 0px; */
 }
 .gallery-page-paragraph p {
 	width: 75%;
@@ -9697,4 +9698,15 @@ span.flaticon-multiply i {
     background: #5f573f;
     color: #fff;
 
+}
+
+footer {
+    background-color: #19a349;
+    color: white;
+    text-align: center;
+    height: 6%; /* Altura del footer */
+    line-height: 30px; /* Alinear el contenido verticalmente */
+    width: 100%;
+    position: fixed;
+    bottom: 0;
 }
