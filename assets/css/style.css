@@ -9670,4 +9670,31 @@ span.flaticon-multiply i {
     line-height: 45px;
     margin-left: 8px;
     transition: .5s;
+    border-color: transparent;
+}
+
+.send:hover{
+    background: #5f573f;
+    color: #fff;
+
+}
+
+
+.vote{
+    display: inline-block;
+    color: #ffffff;
+    width: 40%;
+    height: 50px;
+    border-radius: 3%;
+    background-color: #19a349;
+    line-height: 45px;
+    margin-left: 8px;
+    transition: .5s;
+    border-color: transparent;
+}
+
+.vote:hover{
+    background: #5f573f;
+    color: #fff;
+
 }

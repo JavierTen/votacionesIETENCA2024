@@ -1,6 +1,6 @@
 a.meanmenu-reveal{display:none}
 .mean-container .mean-bar {
-  background: #e11143;
+  background: #19a349;
   float: left;
   min-height: 60px;
   padding: 4px 0 0;
@@ -121,7 +121,7 @@ a.meanmenu-reveal{display:none}
 }
 .mean-container .mean-bar::before {
 	color: #fff;
-	content: "elecson";
+	content: "IETENCA";
 	font-size: 28px;
 	font-weight: 600;
 	left: 10px;

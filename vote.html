@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>elecson - Marketing Agency HTML5 Template</title>
+	<title>Votaciones IETENCA 2024</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Favicon -->
@@ -130,19 +130,10 @@
 							<ul class="nav_scroll d-flex">
 								<li><a href="index.html">Inicio <span></span></a>
 								</li>
-								<li><a href="contact.html">Resultados</a></li>
+								<li><a href="result.html">Resultados</a></li>
 
 							</ul>
-							<div class="politics-btn">
-								<a href="vote.html">Ir a votar <span><i><svg xmlns="http://www.w3.org/2000/svg"
-												width="24" height="24" viewBox="0 0 24 24" fill="none"
-												stroke="currentColor" stroke-width="2" stroke-linecap="round"
-												stroke-linejoin="round" class="lucide lucide-vote">
-												<path d="m9 12 2 2 4-4" />
-												<path d="M5 7c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v12H5V7Z" />
-												<path d="M22 19H2" />
-											</svg></i></span></a>
-							</div>
+							
 						</nav>
 					</div>
 				</div>
@@ -155,43 +146,9 @@
 		<div class="mobile-menu">
 			<nav class="consen_menu">
 				<ul class="nav_scroll">
-					<li><a href="index.html">Home <span><i class="fas fa-plus"></i></span></a>
-						<ul class="sub-menu">
-							<li><a href="https://html.ditsolution.net/elecson/party/">Home Version 01</a></li>
-							<li><a href="index.htm">Home Version 02</a></li>
-							<li><a href="https://html.ditsolution.net/elecson/leader/">Home Version 03</a></li>
-							<li><a href="https://html.ditsolution.net/elecson/party2/">Home Version 04</a></li>
-							<li><a href="https://html.ditsolution.net/elecson/city/">Home Version 05</a></li>
-							<li><a href="https://html.ditsolution.net/elecson/politic2/">Home Version 06</a></li>
-							<li><a href="https://html.ditsolution.net/elecson/leader2/">Home Version 07</a></li>
-							<li><a href="https://html.ditsolution.net/elecson/candidate/">Home Version 08</a></li>
-						</ul>
-					</li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="#">Events</a>
-						<ul class="sub-menu">
-							<li><a href="campaigns.html">Campaigns</a></li>
-							<li><a href="campaigns-details.html">Campaigns Details</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Pages</a>
-						<ul class="sub-menu">
-							<li><a href="about-us.html">About Us</a></li>
-							<li><a href="team.html">Our Team</a></li>
-							<li><a href="donate.html">Donate</a></li>
-							<li><a href="volunteer.html">Volunteer</a></li>
-							<li><a href="our-gallery.html">Our Gallery</a></li>
-							<li><a href="contact.html">Contact Us</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Blog</a>
-						<ul class="sub-menu">
-							<li><a href="blog.html">Blog Gird</a></li>
-							<li><a href="blog-two.html">Blog List</a></li>
-							<li><a href="blog-details.html">Blog Details</a></li>
-						</ul>
-					</li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="result.html">Resultados</a></li>
+					
 				</ul>
 			</nav>
 		</div>
@@ -224,7 +181,7 @@
 				<div class="col-lg-6">
 					<div class="about-page-box  wow fadeInUp ">
 						<div class="politics-section-title">
-							<h4 class="section-sub-title">Atención,,,</h4>
+							<h4 class="section-sub-title">Atención</h4>
 							<h2>Jurado de votaciones </h2>
 							<h2>para las elecciones </h2>
 							<h2>de personero <span>IETENCA</span> 2024.</h2>
@@ -234,13 +191,14 @@
 									aparece en el listado que se le ha proporcionado. A continuación, presione el botón
 									'Enviar' y espere a que el sistema verifique si el documento está habilitado para
 									votar. Una vez confirmada la habilitación, permita al estudiante realizar su voto.
-									Espere hasta que el sistema muestre el mensaje de 'Voto enviado' antes de proceder
+									Espere hasta que el sistema muestre el mensaje de 'Tu voto ha sido registrado exitosamente.' antes de proceder
 									con el siguiente votante.</p>
 							</div>
 							<div class="about-company-author">
 								<div class="author-thumb">
 									<div class="form_box">
-										<input type="text" name="document" placeholder="Numero de documento">
+										<input type="text" id="documentInput" name="document"
+											placeholder="Numero de documento" autofocus>
 									</div>
 								</div>
 								<div class="politics-btn">
@@ -283,19 +241,19 @@
 						<div class="gallery-team-thumb">
 							<img src="assets/images/gallery/c1.png" alt="">
 							<div class="gallery-team-social-icon">
-								<a href="#"><i>Votar<svg style="margin-left: 10px;
+								<button id="c1" data-id="c1" class="send"><i>Votar<svg style="margin-left: 10px;
     margin-top: -6px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
 											stroke="currentColor" stroke-width="2" stroke-linecap="round"
 											stroke-linejoin="round" class="lucide lucide-vote">
 											<path d="m9 12 2 2 4-4" />
 											<path d="M5 7c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v12H5V7Z" />
 											<path d="M22 19H2" />
-										</svg></i></a>
+										</svg></i></button>
 
 							</div>
 						</div>
 						<div class="gallery-team-content">
-							<h3 class="gallery-team-title"><a href="#">Juliana Forero</a></h3>
+							<h3 class="gallery-team-title"><a>Juliana Forero</a></h3>
 							<p>01</p>
 						</div>
 					</div>
@@ -305,19 +263,19 @@
 						<div class="gallery-team-thumb">
 							<img src="assets/images/gallery/c2.png" alt="">
 							<div class="gallery-team-social-icon">
-								<a href="#"><i>Votar<svg style="margin-left: 10px;
+								<button id="c2" data-id="c2" class="send"><i>Votar<svg style="margin-left: 10px;
     margin-top: -6px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
 											stroke="currentColor" stroke-width="2" stroke-linecap="round"
 											stroke-linejoin="round" class="lucide lucide-vote">
 											<path d="m9 12 2 2 4-4" />
 											<path d="M5 7c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v12H5V7Z" />
 											<path d="M22 19H2" />
-										</svg></i></a>
+										</svg></i></button>
 
 							</div>
 						</div>
 						<div class="gallery-team-content">
-							<h3 class="gallery-team-title"><a href="#">Vianney Duran</a></h3>
+							<h3 class="gallery-team-title"><a>Vianney Duran</a></h3>
 							<p>02</p>
 						</div>
 					</div>
@@ -327,19 +285,19 @@
 						<div class="gallery-team-thumb">
 							<img src="assets/images/gallery/c3.png" alt="">
 							<div class="gallery-team-social-icon">
-								<a href="#"><i>Votar<svg style="margin-left: 10px;
+								<button id="c3" data-id="c3" class="send"><i>Votar<svg style="margin-left: 10px;
     margin-top: -6px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
 											stroke="currentColor" stroke-width="2" stroke-linecap="round"
 											stroke-linejoin="round" class="lucide lucide-vote">
 											<path d="m9 12 2 2 4-4" />
 											<path d="M5 7c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v12H5V7Z" />
 											<path d="M22 19H2" />
-										</svg></i></a>
+										</svg></i></button>
 
 							</div>
 						</div>
 						<div class="gallery-team-content">
-							<h3 class="gallery-team-title"><a href="#">Fernanda Millan</a></h3>
+							<h3 class="gallery-team-title"><a>Fernanda Millan</a></h3>
 							<p>03</p>
 						</div>
 					</div>
@@ -350,19 +308,19 @@
 						<div class="gallery-team-thumb">
 							<img src="assets/images/gallery/c4.png" alt="">
 							<div class="gallery-team-social-icon">
-								<a href="#"><i>Votar<svg style="margin-left: 10px;
+								<button id="c4" data-id="c4" class="send"><i>Votar<svg style="margin-left: 10px;
     margin-top: -6px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
 											stroke="currentColor" stroke-width="2" stroke-linecap="round"
 											stroke-linejoin="round" class="lucide lucide-vote">
 											<path d="m9 12 2 2 4-4" />
 											<path d="M5 7c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v12H5V7Z" />
 											<path d="M22 19H2" />
-										</svg></i></a>
+										</svg></i></button>
 
 							</div>
 						</div>
 						<div class="gallery-team-content">
-							<h3 class="gallery-team-title"><a href="#">Alexis Sivo</a></h3>
+							<h3 class="gallery-team-title"><a>Alexis Sivo</a></h3>
 							<p>04</p>
 						</div>
 					</div>
@@ -372,19 +330,19 @@
 						<div class="gallery-team-thumb">
 							<img src="assets/images/gallery/cb.png" alt="">
 							<div class="gallery-team-social-icon">
-								<a href="#"><i>Votar<svg style="margin-left: 10px;
+								<button id="cb" data-id="cb" class="send"><i>Votar<svg style="margin-left: 10px;
     margin-top: -6px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
 											stroke="currentColor" stroke-width="2" stroke-linecap="round"
 											stroke-linejoin="round" class="lucide lucide-vote">
 											<path d="m9 12 2 2 4-4" />
 											<path d="M5 7c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v12H5V7Z" />
 											<path d="M22 19H2" />
-										</svg></i></a>
+										</svg></i></button>
 
 							</div>
 						</div>
 						<div class="gallery-team-content">
-							<h3 class="gallery-team-title"><a href="#">Voto</a></h3>
+							<h3 class="gallery-team-title"><a>Voto</a></h3>
 							<p>En Blanco</p>
 						</div>
 					</div>
@@ -476,18 +434,296 @@
 
 	<script src="assets/js/theme.js"></script>
 
-	<script>
+
+
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+		import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
+		import { getDatabase, ref, set, get, child, runTransaction, update } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js";
+
+		// Your web app's Firebase configuration
+		const firebaseConfig = {
+			apiKey: "AIzaSyA_4RYTIVTjfFxlIDVmVGGNXy2FEWGGQJw",
+			authDomain: "ietenca.firebaseapp.com",
+			projectId: "ietenca",
+			storageBucket: "ietenca.appspot.com",
+			messagingSenderId: "851935223654",
+			appId: "1:851935223654:web:0148fcfded9a5a650772a7",
+			measurementId: "G-4DTHE43BVY"
+		};
+
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const analytics = getAnalytics(app);
+		const database = getDatabase(app);
+
 		document.addEventListener("DOMContentLoaded", function () {
 			const sendButton = document.getElementById('sendButton');
+			const documentInput = document.getElementById('documentInput'); // Asegúrate de tener este ID en tu input
+			const voteC1 = document.getElementById('c1');
+			const voteC2 = document.getElementById('c2');
+			const voteC3 = document.getElementById('c3');
+			const voteC4 = document.getElementById('c4');
+			const voteCb = document.getElementById('cb');
+
 			sendButton.addEventListener('click', function (e) {
 				e.preventDefault();
-				const aboutSection = document.querySelector('.about-page-area');
-				aboutSection.classList.add('hidden');
-				const gallerySection = document.querySelector('.gallery-page-area'); 
-				gallerySection.classList.remove('hidden');
+				const docValue = documentInput.value;
+				if (docValue) { // Verifica si el input no está vacío
+					// Define la referencia donde buscarás el documento. Ajusta esta referencia según tu estructura de datos.
+					const docRef = ref(database, 'students/' + docValue);
+					get(docRef).then((snapshot) => {
+						if (snapshot.exists()) {
+							const data = snapshot.val();
+							if (data.vote == true) {
+								alert('Este estudiante ya ejercio su derecho al voto.')
+							} else {
+								const aboutSection = document.querySelector('.about-page-area');
+								aboutSection.classList.add('hidden');
+								const gallerySection = document.querySelector('.gallery-page-area');
+								gallerySection.classList.remove('hidden');
+							}
+							// Código para manejar el documento encontrado
+							// Por ejemplo, puedes cambiar la vista de la página o mostrar un mensaje
+						} else {
+							alert('El numero de documento ingresado no es valido.')
+
+						}
+					}).catch((error) => {
+						alert('Ocurrio un error, intente de nuevo.')
+					});
+				} else {
+					alert('Por favor, ingresa un número de documento.')
+
+				}
+
+			});
+			//
+
+			voteC1.addEventListener('click', function () {
+				const candidateId = this.getAttribute('data-id'); // ID del candidato
+
+				if (candidateId) {
+					const docValue = documentInput.value;
+					const docRef = ref(database, 'students/' + docValue);
+					// Referencia para contar votos del candidato específico
+					const votesCountRef = ref(database, `votesCount/${candidateId}`);
+
+					// Incrementa el contador de votos para el candidato
+					runTransaction(votesCountRef, (currentVotes) => {
+						// Si currentVotes no existe, lo inicializa a 0 antes de incrementar
+						return (currentVotes || 0) + 1;
+					}).then((result) => {
+						if (result.committed) {
+							alert('Tu voto ha sido registrado exitosamente.');
+							updateStatus();
+						} else {
+							alert('No se pudo registrar el voto en este momento. Por favor, intenta de nuevo.');
+						}
+					}).catch((error) => {
+						alert('Ocurrió un error al registrar tu voto, por favor intenta de nuevo.');
+						console.error("Error al registrar el voto:", error);
+					});
+				} else {
+					alert('Por favor, asegúrate de haber seleccionado un candidato.');
+				}
+			});
+
+			voteC2.addEventListener('click', function () {
+				const candidateId = this.getAttribute('data-id'); // ID del candidato
+
+				if (candidateId) {
+					// Referencia para contar votos del candidato específico
+					const votesCountRef = ref(database, `votesCount/${candidateId}`);
+
+					// Incrementa el contador de votos para el candidato
+					runTransaction(votesCountRef, (currentVotes) => {
+						// Si currentVotes no existe, lo inicializa a 0 antes de incrementar
+						return (currentVotes || 0) + 1;
+					}).then((result) => {
+						if (result.committed) {
+							alert('Tu voto ha sido registrado exitosamente.');
+							updateStatus();
+						} else {
+							alert('No se pudo registrar el voto en este momento. Por favor, intenta de nuevo.');
+						}
+					}).catch((error) => {
+						alert('Ocurrió un error al registrar tu voto, por favor intenta de nuevo.');
+						console.error("Error al registrar el voto:", error);
+					});
+				} else {
+					alert('Por favor, asegúrate de haber seleccionado un candidato.');
+				}
+			});
+
+			voteC3.addEventListener('click', function () {
+				const candidateId = this.getAttribute('data-id'); // ID del candidato
+
+				if (candidateId) {
+					// Referencia para contar votos del candidato específico
+					const votesCountRef = ref(database, `votesCount/${candidateId}`);
+
+					// Incrementa el contador de votos para el candidato
+					runTransaction(votesCountRef, (currentVotes) => {
+						// Si currentVotes no existe, lo inicializa a 0 antes de incrementar
+						return (currentVotes || 0) + 1;
+					}).then((result) => {
+						if (result.committed) {
+							alert('Tu voto ha sido registrado exitosamente.');
+							updateStatus();
+						} else {
+							alert('No se pudo registrar el voto en este momento. Por favor, intenta de nuevo.');
+						}
+					}).catch((error) => {
+						alert('Ocurrió un error al registrar tu voto, por favor intenta de nuevo.');
+						console.error("Error al registrar el voto:", error);
+					});
+				} else {
+					alert('Por favor, asegúrate de haber seleccionado un candidato.');
+				}
+			});
+
+			voteC4.addEventListener('click', function () {
+				const candidateId = this.getAttribute('data-id'); // ID del candidato
+
+				if (candidateId) {
+					// Referencia para contar votos del candidato específico
+					const votesCountRef = ref(database, `votesCount/${candidateId}`);
+
+					// Incrementa el contador de votos para el candidato
+					runTransaction(votesCountRef, (currentVotes) => {
+						// Si currentVotes no existe, lo inicializa a 0 antes de incrementar
+						return (currentVotes || 0) + 1;
+					}).then((result) => {
+						if (result.committed) {
+							alert('Tu voto ha sido registrado exitosamente.');
+							updateStatus();
+						} else {
+							alert('No se pudo registrar el voto en este momento. Por favor, intenta de nuevo.');
+						}
+					}).catch((error) => {
+						alert('Ocurrió un error al registrar tu voto, por favor intenta de nuevo.');
+						console.error("Error al registrar el voto:", error);
+					});
+				} else {
+					alert('Por favor, asegúrate de haber seleccionado un candidato.');
+				}
+			});
+
+			voteCb.addEventListener('click', function () {
+				const candidateId = this.getAttribute('data-id'); // ID del candidato
+
+				if (candidateId) {
+					// Referencia para contar votos del candidato específico
+					const votesCountRef = ref(database, `votesCount/${candidateId}`);
+					// Incrementa el contador de votos para el candidato
+					runTransaction(votesCountRef, (currentVotes) => {
+						// Si currentVotes no existe, lo inicializa a 0 antes de incrementar
+						return (currentVotes || 0) + 1;
+					}).then((result) => {
+						if (result.committed) {
+							alert('Tu voto ha sido registrado exitosamente.');
+							updateStatus();
+						} else {
+							alert('No se pudo registrar el voto en este momento. Por favor, intenta de nuevo.');
+						}
+					}).catch((error) => {
+						alert('Ocurrió un error al registrar tu voto, por favor intenta de nuevo.');
+						console.error("Error al registrar el voto:", error);
+					});
+				} else {
+					alert('Por favor, asegúrate de haber seleccionado un candidato.');
+				}
 			});
 		});
+
+
+
+
+
+		function hidden() {
+			const aboutSection = document.querySelector('.about-page-area');
+			aboutSection.classList.remove('hidden');
+			const gallerySection = document.querySelector('.gallery-page-area');
+			gallerySection.classList.add('hidden');
+			const documentInput = document.getElementById('documentInput');
+			documentInput.value = "";
+		}
+
+
+		function updateStatus() {
+			const documentInput = document.getElementById('documentInput');
+			const docValue = documentInput.value;
+			const docRef = ref(database, 'students/' + docValue);
+
+			get(docRef).then((snapshot) => {
+				if (snapshot.exists() && snapshot.val().vote === false) {
+					// Si el estudiante existe y aún no ha votado, procede a registrar el voto
+					// Aquí iría tu lógica para registrar el voto (omitida para enfocarse en la actualización de `vote`)
+
+					// Después de registrar el voto, actualiza `vote` a true
+					update(docRef, { vote: true })
+						.then(() => {
+							hidden();
+							console.log('Tu voto ha sido registrado exitosamente y tu estado de votación ha sido actualizado.');
+						}).catch((error) => {
+							console.error("Error al actualizar el estado de votación:", error);
+							console.log('Ocurrió un error al actualizar tu estado de votación, por favor intenta de nuevo.');
+						});
+				}
+			}).catch((error) => {
+				console.error("Error al verificar el estado de votación:", error);
+				alert('Ocurrió un error al verificar tu estado de votación, por favor intenta de nuevo.');
+			});
+		}
+
+
+
+
+
+
+
+
+
+		// Optionally, test reading from the database
+		/*function checkConnection() {
+			const dbRef = ref(database, 'students');
+			get(dbRef)
+				.then((snapshot) => {
+					if (snapshot.exists()) {
+						console.log('Data read from database:', snapshot.val());
+					} else {
+						console.log('No data available');
+					}
+				})
+				.catch((error) => {
+					console.error('Error reading from database:', error);
+				});
+		}*/
+
+		/*function countStudents() {
+			const db = getDatabase();
+			const dbRef = ref(db, 'students');
+			get(dbRef)
+				.then((snapshot) => {
+					if (snapshot.exists()) {
+						const numStudents = snapshot.size; // En versiones más recientes, puedes necesitar usar métodos como `.size` o acceder a los datos y luego contarlos.
+						console.log('Number of students:', numStudents);
+					} else {
+						console.log('No students found');
+					}
+				})
+				.catch((error) => {
+					console.error('Error reading from database:', error);
+				});
+		}*/
+		// Run the test
+		//saveStudents();
+		// Optionally check the connection by reading
+		//checkConnection();
 	</script>
+
 
 
 
